@@ -1,0 +1,34 @@
+// Calculatrice simple en Multi
+
+fonction addition(a, b) {
+    retourner a + b
+}
+
+fonction soustraction(a, b) {
+    retourner a - b
+}
+
+fonction multiplication(a, b) {
+    retourner a * b
+}
+
+fonction division(a, b) {
+    si b == 0 {
+        afficher "Erreur: division par zéro"
+        retourner 0
+    }
+    retourner a / b
+}
+
+// Tests
+afficher "10 + 5 ="
+afficher addition(10, 5)
+
+afficher "10 - 5 ="
+afficher soustraction(10, 5)
+
+afficher "10 * 5 ="
+afficher multiplication(10, 5)
+
+afficher "10 / 5 ="
+afficher division(10, 5)

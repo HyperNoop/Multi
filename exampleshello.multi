@@ -1,0 +1,9 @@
+// Programme Hello World en Multi
+// Exemple simple pour débutants
+
+variable message = "Bonjour le monde!"
+afficher message
+
+variable nom = "Alice"
+afficher "Bienvenue"
+afficher nom
