@@ -1,0 +1,37 @@
+// Jeu simple: Deviner un nombre
+
+variable nombre_secret = 42
+variable essais = 0
+variable trouve = faux
+
+afficher "=== Jeu: Devinez le nombre ==="
+afficher "Je pense à un nombre entre 1 et 100"
+
+// Simulation de 3 essais
+variable tentatives = [30, 50, 42]
+
+pour tentative dans tentatives {
+    essais = essais + 1
+    
+    afficher "Essai"
+    afficher essais
+    afficher "Votre nombre:"
+    afficher tentative
+    
+    si tentative == nombre_secret {
+        afficher "Bravo! Vous avez trouvé!"
+        trouve = vrai
+    } sinon {
+        si tentative < nombre_secret {
+            afficher "Plus grand!"
+        } sinon {
+            afficher "Plus petit!"
+        }
+    }
+}
+
+si trouve {
+    afficher "Gagné en"
+    afficher essais
+    afficher "essais"
+}
