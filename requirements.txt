@@ -1,0 +1,2 @@
+# Aucune dépendance externe requise
+# Multi utilise uniquement la bibliothèque standard Python
